@@ -36,22 +36,7 @@ NyaayaCart is a scalable and secure **B2B Marketplace** web application where ve
 | Auth       | JWT, bcryptjs                                                        |
 | Hosting    | Vercel (frontend), Render (backend), MongoDB Atlas (cloud database) |
 
----
 
-## 📁 Project Structure
-
-NyaayaCart/
-├── client/ # React frontend
-├── server/ # Node.js backend
-│ ├── routes/ # All route handlers
-│ ├── controllers/ # Business logic
-│ ├── models/ # Mongoose schemas
-│ ├── config/db.js # MongoDB connection
-│ └── index.js # Main Express server
-
-yaml
-Copy
-Edit
 
 ---
 
