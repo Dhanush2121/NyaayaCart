@@ -40,7 +40,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
 const login = async (email: string, password: string) => {
   try {
-    const res = await fetch('http://localhost:8000/api/auth/login', {
+    const res = await fetch('https://nyaayacart-2.onrender.com/api/auth/login', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ email, password })
@@ -60,7 +60,7 @@ const login = async (email: string, password: string) => {
 
 const register = async (userData: Omit<User, 'id'> & { password: string }) => {
   try {
-    const res = await fetch('http://localhost:8000/api/auth/register', {
+    const res = await fetch('https://nyaayacart-2.onrender.com/api/auth/register', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(userData)
