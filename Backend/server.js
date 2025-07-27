@@ -11,8 +11,11 @@ dotenv.config();
 const app = express();
 
 app.use(cors({
-  origin: 'https://nyaaya-cart.vercel.app',
-  credentials: true,
+  origin: [
+    "https://nyaaya-cart.vercel.app",
+    "https://nyaaya-cart-flhwsswt2-dhanush-javvadhis-projects.vercel.app" // ← Add this!
+  ],
+  credentials: true // only needed if using cookies
 }));
 // app.use(cookieParser());
 app.use(express.json());
