@@ -24,5 +24,15 @@ app.use('/api/auth', authRoutes);
 app.use('/api/products', productRoutes);
 app.use('/api/orders', orderRoutes);
 
+
+app.get('/', (req, res) => {
+  res.send('API is working');
+});
+
+app.get('/api/test', (req, res) => {
+  res.send('Auth route working!');
+});
+
+
 const PORT = process.env.PORT || 8000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
